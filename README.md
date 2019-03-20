@@ -18,9 +18,9 @@ karabiner://karabiner/assets/complex_modifications/import?url=https://raw.github
 ```
 3. Click `Open with Karabiner-Elements'
 
-4. In Karabiner-Elements, click `import` for the "Flash Keys keyboard modifiers"
+4. In Karabiner-Elements, click `import` to import "Flash Keys"
 
-5. To install the modifiers, click the "enable all" button next to the "Flash Keys keyboard modifiers" to get all of the modifier packages.
+5. To install the modifiers, click the "enable all" button next to the "Flash Keys" section to get all of the modifier packages.
 
 6. Use the tables below for the offical key mappings
 ___________________________
@@ -28,8 +28,9 @@ ___________________________
 ## Flash Keys: **F** Mouse Key Modifiers
 Remaps the **F** key to be used as a Mouse Keys modifier. You can also add `shift (⇧)`, `alt (⌥)`, and `cmd (⌘)` with your combination. Use the `[tab]` button as `ctrl + click`.
 
-|  Move the Mouse | |
+| key combo | remaps to  | 
 | ------ | ---------- |  
+|  Move the Mouse | |
 | `F + H`    | MouseLeft `←`   | 
 | `F + J`    | MouseDown `↓`   | 
 | `F + K`    | MouseUp `↑`     | 
@@ -51,8 +52,9 @@ _________________________
 ## Flash Keys: **CTRL** Key Modifiers
 Remaps the **CTRL** key (⌃) to the following commands
 
-| Move The Cursor |   | 
+| key combo | remaps to  | 
 | ------ | --------------- |
+| Move The Cursor |   | 
 | `⌃ + H`    | `←` LeftArrow   | 
 | `⌃ + J`    | `↓` DownArrow   | 
 | `⌃ + K`    | `↑` UpArrow     | 
@@ -62,8 +64,27 @@ Remaps the **CTRL** key (⌃) to the following commands
 | `⌃ + [tab]`   | RightClick | 
 
 
+_________________________
 
+## Flash Keys: **Fn** Key Modifiers
+Remaps the **Function** key to F1-F12 Apples internal keyboard. Be sure to check `Use F1,F2,etc. keys as standard function keys on external keyboards`. 
+Otherwise F1 and F2 get remapped wrong.  
 
-## Flash Keys **Fn** Key Modifiers
-
-
+| key combo | remaps to  | 
+| ------ | --------------- |
+| F-Keys |   | 
+| `fn + 1`    | F1   | 
+| `fn + 2`    | F2   | 
+| `fn + 3`    | F3   | 
+| `fn + 4`    | F4   | 
+| `fn + 5`    | F5   | 
+| `fn + 6`    | F6   | 
+| `fn + 7`    | F7   | 
+| `fn + 8`    | F8   | 
+| `fn + 9`    | F9   | 
+| `fn + 10`    | F10   | 
+| `fn + 11`    | F11   | 
+| `fn + 12`    | F12   | 
+| Escape | |
+| `fn + ~`    | escape   | 
+| `right cmd + ~`    | escape   | 
