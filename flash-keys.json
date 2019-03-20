@@ -7,7 +7,7 @@
     "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/gordonpeterson/karabiner-elements/master/flash-keys.json",
     "rules": [
         {
-        "description": "Flash Keys SDF mouse keys",
+        "description": "Flash Keys: F mouse key modifier",
         "manipulators": [
             {
                 "type": "basic",
@@ -470,72 +470,6 @@
             {
                 "type": "basic",
                 "from": {
-                    "key_code": "b",
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
-                },
-                "to": [{
-                    "pointing_button": "button3"
-                }],
-                "conditions": [{
-                    "type": "variable_if",
-                    "name": "gordons_mouse_keys",
-                    "value": 1
-                }]
-            },
-            {
-                "type": "basic",
-                "from": {
-                    "simultaneous": [{
-                            "key_code": "f"
-                        },
-                        {
-                            "key_code": "q"
-                        }
-                    ],
-                    "simultaneous_options": {
-                        "key_down_order": "strict",
-                        "key_up_order": "strict_inverse",
-                        "to_after_key_up": [{
-                                "set_variable": {
-                                    "name": "gordons_mouse_keys",
-                                    "value": 0
-                                }
-                            },
-                            {
-                                "set_variable": {
-                                    "name": "gordons_mouse_keys_scroll",
-                                    "value": 0
-                                }
-                            }
-                        ]
-                    },
-                    "modifiers": {
-                        "optional": [
-                            "any"
-                        ]
-                    }
-                },
-                "to": [{
-                        "set_variable": {
-                            "name": "gordons_mouse_keys",
-                            "value": 1
-                        }
-                    },
-                    {
-                        "pointing_button": "button3"
-                    }
-                ],
-                "parameters": {
-                    "basic.simultaneous_threshold_milliseconds": 500
-                }
-            },
-            {
-                "type": "basic",
-                "from": {
                     "key_code": "caps_lock",
                     "modifiers": {
                         "optional": [
@@ -826,7 +760,7 @@
         ]
     },
     {
-        "description": "Flash Keys ctrl modifiers",
+        "description": "Flash Keys: ctrl key modifiers",
         "manipulators": [
             {
                 "type": "basic",
@@ -923,7 +857,7 @@
 
             {
                 "type": "basic",
-                "description": "duplicate from SDF mouse keys",
+                "description": "duplicate from F mouse keys",
                 "from": {
                     "key_code": "spacebar",
                     "modifiers": {
@@ -995,7 +929,7 @@
             },
             {
                 "type": "basic",
-                "description": "duplicate from SDF mouse keys",
+                "description": "duplicate from F mouse keys",
                 "from": {
                     "key_code": "caps_lock",
                     "modifiers": {
