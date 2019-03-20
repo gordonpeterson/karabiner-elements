@@ -1,13 +1,13 @@
 {
-    "title": "Gordon's key modifiers",
+    "title": "Flash Keys keyboard modifiers",
     "author": "Gordon Peterson (www.gordonpeterson.org)",
-    "homepage": "https://github.com/gordonpeterson/karabiner-elements/master/",
+    "homepage": "https://github.com/gordonpeterson/karabiner-elements",
     "hostpage": "https://pqrs.org/osx/karabiner/complex_modifications/",
-    "manual": "https://github.com/gordonpeterson/karabiner-elements/master/README.md",
-    "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/gordonpeterson/karabiner-elements/master/gordon.json",
+    "manual": "https://github.com/gordonpeterson/karabiner-elements/",
+    "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/gordonpeterson/karabiner-elements/master/flash-keys.json",
     "rules": [
         {
-        "description": "Gordon's SDF mouse keys",
+        "description": "Flash Keys SDF mouse keys",
         "manipulators": [
             {
                 "type": "basic",
@@ -826,7 +826,7 @@
         ]
     },
     {
-        "description": "Gordon's ctrl modifiers",
+        "description": "Flash Keys ctrl modifiers",
         "manipulators": [
             {
                 "type": "basic",
