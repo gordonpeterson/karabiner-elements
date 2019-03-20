@@ -1,0 +1,1071 @@
+{
+    "title": "Gordon's key modifiers",
+    "author": "Gordon Peterson (www.gordonpeterson.org)",
+    "homepage": "https://github.com/gordonpeterson/karabiner-elements/master/",
+    "hostpage": "https://pqrs.org/osx/karabiner/complex_modifications/",
+    "manual": "https://github.com/gordonpeterson/karabiner-elements/master/README.md",
+    "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/gordonpeterson/karabiner-elements/master/gordon.json",
+    "rules": [
+        {
+        "description": "Gordon's SDF mouse keys",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "j",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "vertical_wheel": 32
+                    }
+                }],
+                "conditions": [{
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys",
+                        "value": 1
+                    },
+                    {
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "j",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "y": 1536
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [
+                        {
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "j"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "mouse_key": {
+                            "y": 1536
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "k",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "vertical_wheel": -32
+                    }
+                }],
+                "conditions": [{
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys",
+                        "value": 1
+                    },
+                    {
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "k",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "y": -1536
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "k"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "mouse_key": {
+                            "y": -1536
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "h",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "horizontal_wheel": 32
+                    }
+                }],
+                "conditions": [{
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys",
+                        "value": 1
+                    },
+                    {
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "h",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "x": -1536
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "h"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "mouse_key": {
+                            "x": -1536
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "horizontal_wheel": -32
+                    }
+                }],
+                "conditions": [{
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys",
+                        "value": 1
+                    },
+                    {
+                        "type": "variable_if",
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 1
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "x": 1536
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "l"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "mouse_key": {
+                            "x": 1536
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "spacebar",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "pointing_button": "button1"
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "pointing_button": "button1"
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "b",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "pointing_button": "button3"
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "q"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "pointing_button": "button3"
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "caps_lock",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "pointing_button": "button2"
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "caps_lock"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "pointing_button": "button2"
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "s",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "set_variable": {
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 1
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }],
+                "to_after_key_up": [{
+                    "set_variable": {
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 0
+                    }
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "s"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "set_variable": {
+                            "name": "gordons_mouse_keys_scroll",
+                            "value": 1
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                },
+                "to_after_key_up": [{
+                    "set_variable": {
+                        "name": "gordons_mouse_keys_scroll",
+                        "value": 0
+                    }
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "e",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "speed_multiplier": 2
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "e"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "mouse_key": {
+                            "speed_multiplier": 2
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "d",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "mouse_key": {
+                        "speed_multiplier": 0.5
+                    }
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "f"
+                        },
+                        {
+                            "key_code": "d"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "mouse_key": {
+                            "speed_multiplier": 0.5
+                        }
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            }
+        ]
+    },
+    {
+        "description": "Gordon's ctrl modifiers",
+        "manipulators": [
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "h",
+                    "modifiers": {
+                        "mandatory": [
+                            "control"
+                        ],
+                        "optional": [
+                            "caps_lock",
+                            "command",
+                            "option",
+                            "shift",
+                            "fn"
+                        ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "left_arrow"
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "j",
+                    "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock",
+                        "command",
+                        "option",
+                        "shift",
+                        "fn"
+                    ]
+                    }
+                },
+                "to": [
+                    {
+                        "key_code": "down_arrow"
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "k",
+                    "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock",
+                        "command",
+                        "option",
+                        "shift",
+                        "fn"
+                    ]
+                    }
+                },
+                "to": [
+                    {
+                    "key_code": "up_arrow"
+                    }
+                ]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "key_code": "l",
+                    "modifiers": {
+                    "mandatory": [
+                        "control"
+                    ],
+                    "optional": [
+                        "caps_lock",
+                        "command",
+                        "option",
+                        "shift",
+                        "fn"
+                    ]
+                    }
+                },
+                "to": [
+                    {
+                    "key_code": "right_arrow"
+                    }
+                ]
+            },
+
+            {
+                "type": "basic",
+                "description": "duplicate from SDF mouse keys",
+                "from": {
+                    "key_code": "spacebar",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "pointing_button": "button1"
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "control"
+                        },
+                        {
+                            "key_code": "spacebar"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "mandatory": [
+                            "control"
+                        ],
+                        "optional": [
+                            "shift",
+                            "alt",
+                            "command"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "pointing_button": "button1"
+                    }
+                ],
+                "parameters": {
+                    "basic.simultaneous_threshold_milliseconds": 500
+                }
+            },
+            {
+                "type": "basic",
+                "description": "duplicate from SDF mouse keys",
+                "from": {
+                    "key_code": "caps_lock",
+                    "modifiers": {
+                        "optional": [
+                            "any"
+                        ]
+                    }
+                },
+                "to": [{
+                    "pointing_button": "button2"
+                }],
+                "conditions": [{
+                    "type": "variable_if",
+                    "name": "gordons_mouse_keys",
+                    "value": 1
+                }]
+            },
+            {
+                "type": "basic",
+                "from": {
+                    "simultaneous": [{
+                            "key_code": "control"
+                        },
+                        {
+                            "key_code": "caps_lock"
+                        }
+                    ],
+                    "simultaneous_options": {
+                        "key_down_order": "strict",
+                        "key_up_order": "strict_inverse",
+                        "to_after_key_up": [{
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys",
+                                    "value": 0
+                                }
+                            },
+                            {
+                                "set_variable": {
+                                    "name": "gordons_mouse_keys_scroll",
+                                    "value": 0
+                                }
+                            }
+                        ]
+                    },
+                    "modifiers": {
+                        "mandatory": [
+                            "control"
+                        ],
+                        "optional": [
+                            "shift",
+                            "alt",
+                            "command"
+                        ]
+                    }
+                },
+                "to": [{
+                        "set_variable": {
+                            "name": "gordons_mouse_keys",
+                            "value": 1
+                        }
+                    },
+                    {
+                        "pointing_button": "button2"
+                    }
+                ],
+                "parameters": {
+                    
+                }
+            }
+        ]
+    }
+    ]
+}
